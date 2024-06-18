@@ -10,7 +10,15 @@ const UserAuthForm = ({ type }) => {
   const authForm = useRef();
 
   const userAuthToServer = (serverRoute, formData) => {
-    axios.get;
+    console.log(import.meta.env.VITE_SERVER_DOMAIN + serverRoute, formData);
+    axios
+      .post(import.meta.env.VITE_SERVER_DOMAIN + serverRoute, formData)
+      .then(({ data }) => {
+        console.log(data);
+      })
+      .catch(({ response }) => {
+        toast.error(response.data.error);
+      });
   };
 
   const handleSubmit = (e) => {
