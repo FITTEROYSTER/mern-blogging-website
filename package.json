@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-native-firebase/app": "^20.1.0",
+    "rollup": "^4.18.0"
+  }
+}

@@ -1,0 +1,8 @@
+/// <reference path="./assertion.d.ts" />
+
+
+assert(1 == 1);
+assert.equal(2, 3)
+assert.equal(2, 3, 'This fails');
+
+assert.on('fail', error => console.error(error));

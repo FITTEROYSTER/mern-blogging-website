@@ -1,0 +1,5 @@
+{
+    "name": "assertion",
+    "main": "assertion.d.ts",
+    "global": true
+}
